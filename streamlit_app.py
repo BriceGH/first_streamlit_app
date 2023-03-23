@@ -23,7 +23,7 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 streamlit.text(fruityvice_response)
-streamlit.header("Fruityvice Conseils sur les fruits !")
+
 
 
 # Let's put a pick list here so they can pick the fruit they want to include 
@@ -37,7 +37,7 @@ import requests
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response.json())
-
+streamlit.header("Fruityvice fruits Advice!")
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
 
