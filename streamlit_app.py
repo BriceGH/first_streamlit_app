@@ -34,8 +34,8 @@ streamlit.dataframe(fruits_to_show)
 #streamlit.dataframe(my_fruit_list)
 
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
-streamlit.text(fruityvice_response.json())
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+#streamlit.text(fruityvice_response.json())
 streamlit.header("Fruityvice fruits Advice!")
    
 #fruit_choice = streamlit.text_input('What fruit would you like information about?')
