@@ -40,7 +40,7 @@ streamlit.dataframe(fruits_to_show)
 
 
 #fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response.json())
 
 
@@ -60,7 +60,6 @@ else:
       streamlit.dataframe(fruityvice_normalized)
 
 except URLError as e:
-
       streamlit. error ()
 
 
