@@ -17,7 +17,7 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 #Cours  Lesson 3: A Quick and Easy Streamlit App!  🥋 Importing pandas 
 
-#streamlit.stop()
+streamlit.stop()
 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 #fruits_to_show = my_fruit_list.loc[fruits_selected]
