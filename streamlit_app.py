@@ -17,7 +17,7 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 #Cours  Lesson 3: A Quick and Easy Streamlit App!  🥋 Importing pandas 
 
-streamlit.stop()
+
 
 my_fruit_list = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 #fruits_to_show = my_fruit_list.loc[fruits_selected]
@@ -49,6 +49,8 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_c
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
 # write your own comment - what does this do?
 streamlit.dataframe(fruityvice_normalized)
+
+streamlit.stop()
 
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 my_cur = my_cnx.cursor()
