@@ -17,7 +17,7 @@ streamlit.header('🍌🥭 Build Your Own Fruit Smoothie 🥝🍇')
 
 #Cours  Lesson 3: A Quick and Easy Streamlit App!  🥋 Importing pandas 
 
-streamlit.stop()
+#streamlit.stop()
 
 
 
