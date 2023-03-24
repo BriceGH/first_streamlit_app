@@ -44,7 +44,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "kiwi")
 streamlit.text(fruityvice_response.json())
 
 
-streamlit.header('Fruityvice Fruit Advice!")
+streamlit.header('Fruityvice Fruit Advice!')
 try:
       fruit_choice - streamlit.text input( 'What fruit would you like information about?")
 
