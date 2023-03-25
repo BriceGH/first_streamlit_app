@@ -27,11 +27,32 @@ fruits_selected=streamlit.multiselect("Pick some fruits:", list(my_fruit_list.in
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 streamlit.dataframe(fruits_to_show)
 
-streamlit.header('Fruityvice fruits Advice!')
+#streamlit.header('Fruityvice fruits Advice!')
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?')  
+#fruit_choice = streamlit.text_input('What fruit would you like information about?')  
    
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-streamlit.dataframe(fruityvice_normalized)
+#fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruit_choice)
+#fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+#streamlit.dataframe(fruityvice_normalized)
+
+#create the repeatable code block (called a function) 
+def get_fruityvice_data(this_fruit_choice).
+	fruityvice_response = requests.get("https://fruityvice.con/api/fruit/" + this_fruit_choice)
+	fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
+	return  fruityvice_normalized
+
+#New Section to display fruityvice api response
+streanlit.header(‘Fruityvice Fruit Advice!)
+
+try:
+fruit_choîce = streanlit.text_input('What fruit would you like information about?')
+if not fruit choice:
+
+streanlit.error("Please select a fruit to get information")
+
+else:
+
+back_fron_function = get_fruityvice_data(fruit_choice)
+
+streanlit.dataframe(back_fron_function)
 
