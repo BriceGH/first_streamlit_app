@@ -34,7 +34,7 @@ streamlit.header('Fruityvice fruits Advice!')
 
 
 
-fruit_choice = streamlit.text_input('What fruit would you like information about?','kiwi')  
+fruit_choice = streamlit.text_input('What fruit would you like information about?')  
 
 
 
